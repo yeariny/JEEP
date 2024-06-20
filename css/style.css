@@ -1,0 +1,531 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    vertical-align: top;
+}
+
+address {
+    font-style: normal
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.moto {
+    font-family: 'moto-verse', sans-serif;
+}
+
+.noto_bold {
+    font-family: 'noto-sans-bold', sans-serif;
+}
+
+.noto_regular {
+    font-family: 'noto-sans-regular', sans-serif
+}
+
+#wrap {
+    min-width: 1262px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+    min-width: 1262px;
+}
+
+#blank {
+    width: 329px;
+    height: 100px;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+#min_header {
+    width: 1262px;
+    height: 100px;
+    margin: 0 auto;
+    float: left;
+}
+
+#L_lnb {
+    width: 500px;
+    height: 100px;
+    float: left;
+}
+
+#L_lnb > ul > li {
+    float: left;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+}
+
+#L_lnb > ul > li > a {
+    line-height: 100px;
+    color: white;
+    text-shadow: 3px 3px 4px rgb(108, 109, 108);
+}
+
+#L_lnb > ul > li > ul > li > a {
+    color: white;
+    
+}
+
+#L_lnb > ul > li > a:hover {
+    color: yellow;
+}
+
+#L_lnb > ul > li > ul > li > a:hover {
+    color:yellow;
+}
+
+.models > ul {
+    width: 1262px;
+    height: 980px;
+}
+
+.models > ul > li {
+    float: left;
+    position: relative;
+}
+
+.models > ul > li:nth-child(1) {
+    margin-right: 31px;
+}
+
+.models > ul > li:nth-child(2) {
+    margin-right: 31px;
+}
+
+.models > ul > li:nth-child(4) {
+    margin-right: 31px;
+    margin-top: 40px;
+}
+
+.models > ul > li:nth-child(5) {
+    margin-right: 31px;
+    margin-top: 40px;
+}
+
+.models > ul > li:nth-child(6) {
+    margin-top: 40px;
+}
+
+/*
+.models  p {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 18px;
+}
+*/
+
+/*
+.models  > ul > li:nth-child(1) >a> p{
+    bottom: 5%;
+
+}
+*/
+
+.models > .sub{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    top: 120px;
+    height: 0;
+    overflow: hidden;
+   
+}
+.subBox_transition{
+ transition: all 2s;    
+}
+
+.sub_transition{
+    transition: all 0.5s;
+}
+
+
+
+#logo {
+    float: left;
+    width: 262px;
+    height: 100px;
+}
+
+#logo h1 a {
+    color: white;
+    display: block;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    text-shadow: 3px 3px 4px rgb(108, 109, 108);
+
+}
+
+#logo h1 a:hover{
+    color: black;
+}
+
+
+
+.R_lnb {
+    width: 500px;
+    height: 100px;
+    float: left;
+}
+
+.models>ul>li{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.models>ul>li>a>img{
+    transition: all 0.5s;
+}
+
+.models>ul>li>a>img:hover{
+    transform: scale(1.1);
+}
+
+.models>ul>li>a>p {
+/*    color:black;*/
+        position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #888383;
+    font-size: 18px;
+}
+
+.models>ul>li>a>p:hover{
+    color: black;
+}
+
+.buy_online > ul{
+    position: relative;
+}
+.R_lnb > ul {
+    position: relative;
+}
+
+
+.buy_online > ul > li {
+    float: left;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    /*.sub의 기준*/
+}
+
+
+.buy_online > ul > li {
+    float: left;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    /*.sub의 기준*/
+}
+
+
+
+.buy_online .sub {
+    position: absolute;
+    width: 250px;
+    top: 100px;
+    height: 0;
+    overflow: hidden;
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+.buy_online .sub > li {
+    width: 100%;
+    height: 70px;
+    
+    
+}
+
+.buy_online .sub > li > a{
+ color: yellow;
+}
+
+
+.R_lnb > ul > li {
+    float: left;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    /*.sub의 기준*/
+}
+
+.R_lnb > ul > li > a {
+    line-height: 100px;
+    color: white;
+    text-shadow: 3px 3px 4px rgb(108, 109, 108);
+}
+
+.R_lnb > ul > li > a:hover{
+    color: yellow;
+}
+
+
+
+
+.R_lnb .sub {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+
+.R_lnb .sub > li {
+    width: 100%;
+    height: 70px;
+}
+
+.L_lnb > ul > li .sub > li > a {
+    display: block;
+    color: white;
+    line-height: 70px;
+}
+
+
+
+.R_lnb > ul > li .sub > li > a {
+    display: block;
+    color: white;
+    line-height: 70px;
+}
+
+.R_lnb > ul > li .sub > li > a:hover{
+    color: yellow;
+}
+
+.subBox {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+
+.buy_online:hover .sub, .L_lnb .buy_online:hover .subBox {
+    height: 210px;
+}
+
+.models:hover .sub, .L_lnb .models:hover .subBox {
+    height: 960px;
+}
+
+
+.jeep_life:hover .sub, .R_lnb .jeep_life:hover .subBox {
+    height: 210px;
+}
+
+
+.service:hover .sub, .R_lnb .service:hover .subBox {
+    height: 280px;
+}
+
+.service:hover{
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.models:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}.jeep_life:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}.buy_online:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#icon {
+    width: 329px;
+    height: 100px;
+   position: absolute;
+    right: 0;
+}
+
+#icon > ul {
+    width: 210px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#icon > ul > li {
+    width: 70px;
+    height: 100px;
+    float: left;
+    text-align: center;
+}
+
+#icon > ul > li > a > img {
+    width: 50%;
+    line-height: 100px;
+    margin-top: 30px;
+    transition: all 0.4s;
+
+}
+
+#icon > ul > li > a > img:hover{
+    transform: scale(1.2);
+}
+
+#icon > ul > li:nth-child(1) > a > img {
+    width: 40%;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 220px;
+    background-color: black;
+}
+
+address {
+    width: 1262px;
+    height: 120px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+}
+
+#address {
+    padding-top: 10px;
+}
+
+#address > a {
+    color: white;
+    font-size: 12px;
+}
+
+#address > a:hover {
+    color: yellow;
+}
+
+#fnb {
+    width: 1262px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#L_fnb {
+    width: 631px;
+    height: 100px;
+    float: left;
+}
+
+#L_fnb_logo > a > img {
+    width: 30%;
+}
+
+#L_fnb_bottom {
+    color: white;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+
+#R_fnb {
+    width: 631px;
+    height: 100px;
+    float: left;
+}
+
+#R_fnb_top {
+    height: 40px;
+}
+
+#R_fnb_bottom {
+    height: 60px;
+}
+
+#R_fnb_bottom ul {
+    float: right;
+}
+
+#R_fnb_bottom li {
+    float: left;
+
+}
+
+
+@media all and (max-width:1600px) {
+    #icon {
+     display: none;
+    }
+}
+

@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+
+
+
+#sub_header {
+    position: fixed;
+    width: 100%;
+    min-width: 1262px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    top: 100px;
+}
+
+#sub_header > ul {
+    width: 500px;
+    margin: 0 auto;
+    height: 50px;
+
+}
+
+#sub_header > ul > li {
+    float: left;
+    width: calc(500px / 3);
+    line-height: 50px;
+    text-align: center;
+}
+
+#sub_header > ul > li > a {
+    color: white;
+}
+
+#sub_header > ul > li > a:hover {
+    color: yellow;
+}
+
+#sub_header .logo a {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    font-size: 30px;
+    color: white;
+}
+
+#sub_header .logo a:hover {
+    color: yellow;
+}
+
+.top_button a{
+position: absolute;
+top: 0px;
+right: 20px;
+width: 0;
+height: 0;
+border-bottom: 15px solid transparent;
+border-top: 15px solid transparent;
+border-left: 25px solid white;
+border-right: 25px solid transparent;
+    transform: rotate(-90deg) scale(0.7);
+}
+
+.top_button a:hover{
+   
+   border-bottom: 15px solid transparent;
+border-top: 15px solid transparent;
+border-left: 25px solid yellow;
+border-right: 25px solid transparent;
+}
+
+
+
+
+.art1{
+    position: relative;
+    
+}
+
+.art1 p{
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+}
+
+
+
+
+aside{
+    width: 1200px;
+    margin: 0 auto;
+    /*마진 탑 넣기*/
+    position: relative;
+/*    height: 5990px;*/
+    
+
+}
+
+
+.aside1{
+    width: 1262px;
+
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.aside2{
+    width: 1262px;
+/*    height: 1565px;*/
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+.aside3{
+    position: relative;
+    width: 1262px;
+/*    height: 875px;*/
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+.aside4{
+    width: 1262px;
+/*    height: 965px;*/
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+.aside5{
+    width: 1262px;
+/*    height: 1400px;*/
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/*
+.aside5 {
+    z-index: -1;
+}
+*/
+
+
+
+#L_article{
+    width: 300px;
+    height: 175px;
+    float: left;
+}
+
+#R_article{
+    width: 962px;
+    float: left;
+    height: 175px;
+    position: relative;
+}
+
+#R_article p{
+    color: #585858;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#R_article h4{
+    color: #585858;
+    font-size: 24px;
+    margin-left: 50px;
+    line-height: 70px;
+}
+#R_article a{
+position: absolute;
+    right: 0;
+}
+#R_article a img{
+    position: absolute;
+    right: 0;
+}
+
+#R_article a img:nth-child(2){
+  top: 10px;
+    right: 15px;
+}
+
+.bottom_article{
+    position: relative;
+    left:0;
+    top:0;
+    width: 1262px;
+
+    height: 0;
+    overflow: hidden;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: justify;
+    color: #585858;
+    background-color: #f7f7f7;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+.bottom_article.active {
+    height: 850px;
+}
+.aside2 .bottom_article.active {
+    height: 1390px;
+}
+.aside3 .bottom_article.active {
+    height: 700px;
+}
+.aside4 .bottom_article.active {
+    height: 790px;
+}
+.aside5 .bottom_article.active {
+    height: 1210px;
+}
+
+
+.arrow1, .arrow2, .arrow3, .arrow4, .arrow5 {
+    transition: all 0.5s;
+}
+
+.arrow1.active {
+    transform: rotate(90deg);
+}
+.arrow2.active {
+    transform: rotate(90deg);
+}
+.arrow3.active {
+    transform: rotate(90deg);
+}
+.arrow4.active {
+    transform: rotate(90deg);
+}
+.arrow5.active {
+    transform: rotate(90deg);
+}
+
+
+
+
+.aside2 .bottom_article{
+/*    height: 1390px;*/
+}
+
+.aside3 .bottom_article{
+/*    height: 700px;*/
+}
+
+
+.aside4 .bottom_article{
+/*    height: 790px;*/
+}
+
+.aside5 .bottom_article{
+/*    height: 1210px;*/
+}
+
+
+
+
+/*
+sectopn{
+    overflow: hidden;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    position: relative;
+}
