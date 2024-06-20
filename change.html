@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>pressroom</title>
+    <style>
+        @font-face {
+            font-family: "noto-sans-bold";
+            src: url(./font/NotoSansKR-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: "noto-sans-regular";
+            src: url(./font/NotoSansKR-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: "moto-verse";
+            src: url(./font/moto-verse.ttf);
+        }
+    </style>
+    <!--원래 스타일1 css 연결했었음/-->
+    <link rel="stylesheet" href="css/style-2.css">
+    <link rel="stylesheet" href="css/change.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <div id="sub_header">
+            <div class="logo moto">
+                <a href="index.html">jeep</a>
+            </div>
+            <ul class="noto_bold">
+                <li><a href="repair_center.html">수리센터</a></li>
+                <li><a href="one_by_one.html">고객센터</a></li>
+                <li><a href="change.html" style="color: yellow">교환/환불</a></li>
+                <li><a href="jeep_care.html">JEEP CARE</a></li>
+            </ul>
+            <div class="top_button">
+                <a href="#header"></a>
+            </div>
+        </div>
+        <section>
+          <article><img src="img/change_main.png" alt="도로자동차달리는사진"></article>
+          <article class="art1"><img src="img/change_section.png" alt="교환환불본문">
+          <div class="btn"><a href="https://www.jeep.co.kr/content/dam/cross-regional/apac/jeep/ko_kr/owner/vehicle_exchangerefund/%ED%95%98%EC%9E%90%EC%9E%AC%EB%B0%9C%20%ED%86%B5%EB%B3%B4%EC%84%9C_2107.pdf" target="_blank"><img src="img/change_btn.png" alt="하자재발PDF다운로드"></a></div>
+          </article>
+        </section>
+        <footer id="footer"></footer>
+    </div>
+
+    <script src="innerHTML.js"></script>
+    <script src="js/change.js"></script>
+
+</body>
+
+</html>

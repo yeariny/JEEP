@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>pressroom</title>
+    <style>
+      @font-face {
+        font-family: "noto-sans-bold";
+        src: url(./font/NotoSansKR-Bold.ttf);
+      }
+
+      @font-face {
+        font-family: "noto-sans-regular";
+        src: url(./font/NotoSansKR-Regular.ttf);
+      }
+
+      @font-face {
+        font-family: "moto-verse";
+        src: url(./font/moto-verse.ttf);
+      }
+
+      @font-face {
+        font-family: "linear-beam";
+        src: url(./font/Linebeam.ttf);
+      }
+    </style>
+    
+    <link rel="stylesheet" href="css/grand_cherokee_L.css" />
+    <link rel="stylesheet" href="css/style-2.css" />
+    <!-- AOS Library for scroll animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- independent divs, for showing onclick imgs -->
+
+    <div class="img-clicked" id="L1" onclick="hideOverlay('L1')">
+      <img src="img/L_pop_1.png" alt="" id="L1-fixed-img" />
+    </div>
+    <div class="img-clicked" id="L2" onclick="hideOverlay('L2')">
+      <img src="img/L_p_2.png" alt="" id="L2-fixed-img" />
+    </div>
+    <div class="img-clicked" id="L3" onclick="hideOverlay('L3')">
+      <img src="img/L_p_3.png" alt="" id="L3-fixed-img" />
+    </div>
+    <div class="img-clicked" id="L4" onclick="hideOverlay('L4')">
+      <img src="img/L_p_4.png" alt="" id="L4-fixed-img" />
+    </div>
+    <div class="img-clicked" id="L5" onclick="hideOverlay('L5')">
+      <img src="img/L_p_5.png" alt="" id="L5-fixed-img" />
+    </div>
+    <div class="img-clicked" id="L6" onclick="hideOverlay('L6')">
+      <img src="img/L_p_6.png" alt="" id="L6-fixed-img" />
+    </div>
+    <!--  -->
+
+    <div id="wrap">
+      <header id="header"></header>
+      <div id="sub_header" class="sub_header">
+        <div class="logo moto">
+          <a href="index.html">jeep</a>
+        </div>
+        <ul class="noto_bold sub_yellow">
+          <li><a href="grand_cherokee_L.html">grand cherokee L</a></li>
+          <li><a href="grand_cherokee.html">grand cherokee</a></li>
+          <li><a href="grand_cherokee_4xe.html">grand cherokee 4xe</a></li>
+          <li><a href="wrangler.html">wrangler</a></li>
+          <li><a href="wrangler_4xe.html">wrangler 4xe</a></li>
+          <li><a href="gladiator.html">gladiator</a></li>
+        </ul>
+        <div class="top_button">
+          <a href="#header"></a>
+        </div>
+      </div>
+      <section>
+        <article class="art1">
+          <img src="img/L_main.png" alt="그랜드체로키L사진" />
+          <p class="moto">Grand<br />Cherokee<br />L</p>
+        </article>
+        <div class="art2">
+          <article>
+            <ul class="art2_1">
+              <li onclick="showImg('L1')">
+                <img src="img/L1.png" alt="" />
+                
+              </li>
+              <li onclick="showImg('L2')">
+                <img src="img/L2.png" alt="" />
+              </li>
+              <li onclick="showImg('L3')">
+                <img src="img/L3.png" alt="" />
+              </li>
+            </ul>
+            <ul class="art2_2">
+              <li onclick="showImg('L4')">
+                <img src="img/L4.png" alt="" />
+              </li>
+              <li onclick="showImg('L5')">
+                <img src="img/L5.png" alt="" />
+              </li>
+              <li onclick="showImg('L6')">
+                <img src="img/L6.png" alt="" />
+              </li>
+            </ul>
+          </article>
+          <article class="art3">
+            <ul>
+              <li>
+                <div id="L_art3">
+                  <img src="img/L_1_300.png" alt="" />
+                </div>
+                <div id="R_art3" data-aos="fade-left">
+                  <h4 class="noto_bold">Advanced Safety and Security</h4>
+                  <p class="noto_regular">
+                    ParkSense 전/후 센서 주차 보조 시스템, 풀-스피드 전방 충돌
+                    경고 플러스 시스템, 운전자 졸음 감지 시스템, 360도 서라운드
+                    뷰 카메라 등, 다양한 첨단 안전/보안 기능들이 장착되어 있어
+                    운전자와 승객을 보호합니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div id="L_art3"><img src="img/L_2_300.png" alt="" /></div>
+                <div id="R_art3" data-aos="fade-left">
+                  <h4 class="noto_bold">21-Inch Polished Aluminum Wheels</h4>
+                  <p class="noto_regular">
+                    21인치 광택 알루미늄 휠을 장착한 GRAND CHEROKEE L Summit
+                    Reserve의 혁신적인 스타일과 디자인을 도로 에서 확인해
+                    보십시오.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div id="L_art3"><img src="img/L_3_300.png" alt="" /></div>
+                <div id="R_art3" data-aos="fade-left">
+                  <h4 class="noto_bold">19-Speaker McIntosh® Audio System</h4>
+                  <p class="noto_regular">
+                    고품격 오디오 제조사인 매킨토시가 제공하는 예술적인 사운드에
+                    몸을 맡기고, 최대 출력 950 와트의 17-채널 앰프, 맞춤
+                    디자인된 19개의 스피커, 10인치 서브우퍼를 통해 재생되는
+                    음악을 즐기십시오.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div id="L_art3"><img src="img/L_4_300.png" alt="" /></div>
+                <div id="R_art3" data-aos="fade-left">
+                  <h4 class="noto_bold">Palermo Leather Seating</h4>
+                  <p class="noto_regular">
+                    운전에 탁월한 안락함을 더해 보십시오. 퀼트 팔레르모 가죽
+                    시트가 세련된 아름다움과 품격을 극대화합니다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="art4">
+            <ul>
+              <li>
+                <img src="img/L_1_1260.png" alt="" />
+                <div class="textbox_L">
+                  <div class="text_L">
+                    <h4 class="noto_bold">HIGH-DEFINITION HINDSIGHT</h4>
+                    <p class="noto_regular">
+                      오토 디밍 디지털 디스플레이 룸미러는 LCD 모니터가 내장되어
+                      있어, 동승객이나 짐이 시야를 가려도 고화질로 후방 도로를
+                      볼 수 있습니다. 실시간 영상을 볼 수도 있고, 작동을
+                      중지하면 원래의 반사 거울로 돌아갑니다.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="img/L_2_1260.png" alt="" />
+                <div class="textbox_R">
+                  <div class="text_R">
+                    <h4 class="noto_bold">THE PEAK OF TECHNOLOGY</h4>
+                    <p class="noto_regular">
+                      Jeep®의 첨단기술 신세계로 여러분을 안내합니다. Uconnect
+                      10.1인치 터치스크린과 함께 제공되는 Uconnect Tmap
+                      내비게이션을 만나보세요. 헤드업 디스플레이, 그리고 19개의
+                      스피커와 함께 제공되는 프리미엄 매킨토시(McIntosh®) 사운드
+                      시스템 MX950이 내장된 Grand Cherokee L은 혁신적인 이전
+                      모델들을 넘어 새로운 도약을 보여줍니다.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="img/L_3_1260.png" alt="" />
+                <div class="textbox_L">
+                  <div class="text_L">
+                    <h4 class="noto_bold">EXPANSIVE INTERIOR</h4>
+                    <p class="noto_regular">
+                      역대 최다 수상실적을 자랑하는 Grand Cherokee 인테리어의
+                      계보를 잇습니다. Overland는 3열 좌석의 7인승으로
+                      선보입니다. 메모리 및 마사지 기능이 포함된 앞좌석의 새로운
+                      기능은 편안함을 유지하는 데 도움이 됩니다. 4존 오토 에어컨
+                      및 프리미엄 에어 필터링은 모든 탑승객에게 더 아늑한 객실을
+                      제공합니다.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="img/L_4_1260.png" alt="" />
+                <div class="textbox_R">
+                  <div class="text_R">
+                    <h4 class="noto_bold">THE POWER TO PULL</h4>
+                    <p class="noto_regular">
+                      GRAND CHEROKEE L에 3.6L V6 엔진을 장착하면 최대 2,286kg 의
+                      견인력을 제공합니다.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+        <article class="art5">
+          <h3 class="noto_bold">SELECT YOUR <span class="moto">JEEP</span></h3>
+          <img
+            src="img/L_d_grey.png"
+            alt=""
+            class="hidden-img default-img"
+            id="show-d-grey"
+          />
+
+          <img src="img/L_red.png" alt="" class="hidden-img" id="show-red" />
+          <img src="img/L_grey.png" alt="" class="hidden-img" id="show-grey" />
+          <img
+            src="img/L_white.png"
+            alt=""
+            class="hidden-img"
+            id="show-white"
+          />
+          <img
+            src="img/L_black.png"
+            alt=""
+            class="hidden-img"
+            id="show-black"
+          />
+          <ul>
+            <li
+              class="show-img-button"
+              onclick="showBottomImg(event, 'show-d-grey')"
+            ></li>
+            <li
+              class="show-img-button"
+              onclick="showBottomImg(event, 'show-red')"
+            ></li>
+            <li
+              class="show-img-button"
+              onclick="showBottomImg(event, 'show-grey')"
+            ></li>
+            <li
+              class="show-img-button"
+              onclick="showBottomImg(event, 'show-white')"
+            ></li>
+            <li
+              class="show-img-button"
+              onclick="showBottomImg(event, 'show-black')"
+            ></li>
+          </ul>
+        </article>
+        <ul class="btn">
+          <li class="noto_regular"><a href="ride.html">시승신청</a></li>
+          <li class="noto_regular"><a href="price.html">견적내기</a></li>
+        </ul>
+      </section>
+
+      <footer id="footer"></footer>
+    </div>
+
+    <script src="innerHTML.js"></script>
+    <script src="js/grand_cherokee_L.js"></script>
+    <!-- AOS Library for scroll animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        mirror: true,
+        duration: 600,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>pressroom</title>
+    <style>
+      @font-face {
+        font-family: "noto-sans-bold";
+        src: url(./font/NotoSansKR-Bold.ttf);
+      }
+
+      @font-face {
+        font-family: "noto-sans-regular";
+        src: url(./font/NotoSansKR-Regular.ttf);
+      }
+
+      @font-face {
+        font-family: "moto-verse";
+        src: url(./font/moto-verse.ttf);
+      }
+
+      @font-face {
+        font-family: "linear-beam";
+        src: url(./font/Linebeam.ttf);
+      }
+    </style>
+    <link rel="stylesheet" href="css/style-2.css" />
+    <link rel="stylesheet" href="css/price.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header id="header"></header>
+      <div id="sub_header">
+        <div class="logo moto">
+          <a href="index.html">jeep</a>
+        </div>
+        <ul class="noto_bold">
+          <li><a href="promotion.html">프로모션</a></li>
+          <li><a href="price.html" style="color: yellow">견적요청</a></li>
+          <li><a href="ride.html">시승신청</a></li>
+        </ul>
+        <div class="top_button">
+          <a href="#header"></a>
+        </div>
+      </div>
+      <section>
+        <article><img src="img/price_main.png" alt="자동차사진"></article>
+        <article><img src="img/price_s_w.png" alt=""></article>
+      </section>
+
+      <footer id="footer"></footer>
+    </div>
+
+    <script src="innerHTML.js"></script>
+    <script src="js/price.js"></script>
+  </body>
+</html>
